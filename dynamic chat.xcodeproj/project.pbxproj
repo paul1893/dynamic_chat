@@ -12,6 +12,7 @@
 		2E058D4B22F1B83D0036D17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E058D4922F1B83D0036D17B /* Main.storyboard */; };
 		2E058D4D22F1B83E0036D17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E058D4C22F1B83E0036D17B /* Assets.xcassets */; };
 		2E058D5022F1B83E0036D17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E058D4E22F1B83E0036D17B /* LaunchScreen.storyboard */; };
+		2E058D5822F1BD0B0036D17B /* SpringYCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E058D5722F1BD0B0036D17B /* SpringYCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2E058D4C22F1B83E0036D17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E058D4F22F1B83E0036D17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E058D5122F1B83E0036D17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E058D5722F1BD0B0036D17B /* SpringYCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringYCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				2E058D4522F1B83D0036D17B /* AppDelegate.swift */,
+				2E058D5722F1BD0B0036D17B /* SpringYCollectionViewFlowLayout.swift */,
 				2E058D4722F1B83D0036D17B /* ViewController.swift */,
 				2E058D4922F1B83D0036D17B /* Main.storyboard */,
 				2E058D4C22F1B83E0036D17B /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E058D5822F1BD0B0036D17B /* SpringYCollectionViewFlowLayout.swift in Sources */,
 				2E058D4822F1B83D0036D17B /* ViewController.swift in Sources */,
 				2E058D4622F1B83D0036D17B /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YFUK27DKT;
 				INFOPLIST_FILE = "dynamic chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YFUK27DKT;
 				INFOPLIST_FILE = "dynamic chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

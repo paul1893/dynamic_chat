@@ -1,20 +1,23 @@
-//
-//  ViewController.swift
-//  dynamic chat
-//
-//  Created by Paul Bancarel on 31/07/2019.
-//  Copyright © 2019 Paul Bancarel. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        collectionView.dataSource = self
+        collectionView.collectionViewLayout = SpringyCollectionViewFlowLayout()
     }
-
-
 }
 
+extension ViewController : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 100
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+    }
+    
+}
